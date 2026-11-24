@@ -1,6 +1,14 @@
 def addieren(a, b):
     return a + b
 
+def multiplikation(a, b):
+    return a * b
+
+def division(a, b):
+    if b == 0:
+        return "Fehler: Division durch 0"
+    return a / b
+
 def main():
     print("Taschenrechner")
     print("1 fuer Addition")
@@ -16,12 +24,13 @@ def main():
             # Hier Funktion für Addition einfügen
         case "2":
             # Hier Funktion für die Subtraktion einfügen
+            pass
         case "3":
-            # Hier die Funktion für die Multiplikation einfügen
+            print("Resultat: {}".format(multiplikation(2, 3)))
         case "4":
-            # Hier die Funktion für die Division einfügen
+            print("Resultat: {}".format(division(6, 3)))
         case _:
             print("Falsche Auswahl, das Programm wird beendet.")
 
 if __name__ == "__main__":
-    main()
+    main()  
