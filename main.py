@@ -1,6 +1,9 @@
 def addieren(a, b):
     return a + b
 
+def subtrahieren(a, b):
+    return a - b
+  
 def multiplikation(a, b):
     return a * b
 
@@ -23,6 +26,7 @@ def main():
             print("Resultat: {}".format(addieren(2,3)))
             # Hier Funktion für Addition einfügen
         case "2":
+            print("Resultat: {}".format(subtrahieren(5,3)))
             # Hier Funktion für die Subtraktion einfügen
             pass
         case "3":
